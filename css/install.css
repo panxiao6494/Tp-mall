@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: 65px;
+    background-color: #424954;
+}
+
+.main {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.main_left {
+    float: left;
+}
+
+.main_left a {
+    line-height: 70px;
+}
+
+.main_left img {
+    width: 140px;
+    height: 16px;
+}
+
+
+.main_left span {
+    font-size: larger;
+    color: #fff;
+}
+
+.main_mid {
+    margin-left: 200px;
+}
+
+.main_mid ul li {
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    line-height: 65px;
+}
+
+a {
+    text-decoration: none;
+    color: #939393;
+}
+
+.main_right {
+    margin-left: 100px;
+    float: left;
+    width: 160px;
+    line-height: 65px;
+}
+
+.searTxt {
+    width: 120px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 6px;
+}
+
+.main_right input {
+    margin-top: 22px;
+    float: left;
+}
+
+.main_right span img {
+    width: 15px;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+}
+
+.wran {
+    width: 315px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    top: -23px;
+    left: 7px;
+    box-shadow: gray 5px 5px 5px;
+    display: none;
+    z-index: 9;
+}
+
+.wran p {
+    font-size: small;
+    line-height: 45px;
+    color: red;
+}
+
+.banner {
+    /* margin-top: 50px; */
+    background: url("../img/banner.png");
+    width: 100%;
+    height: 240px;
+    background-position: center;
+    position: relative;
+}
+.banner div{
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    left: 45%;
+    top: 100px;
+}
+.install_vdo {
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-shadow: 0 0 24px rgb(0 0 0 / 50%);
+    font-weight: bold; 
+}
+.vdo{
+    width: 100%;
+}
+.vdo_top{
+    margin: 0 auto;
+    width: 50%;
+    height: 300px;
+    padding-top: 24px;
+}
+.vdo_top>p{
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.vdo_main{
+    width: 100%;
+    height: 275px;
+    border-bottom: #E6E6E6 2px solid;
+}
+.vdo_main ul li{
+    list-style: none;
+    float: left;
+    width: 298px;
+    height: 240px;
+    /* border: solid 0.5px black ; */
+    position: relative;
+}
+.vdo_main ul li:nth-child(2),.vdo_main ul li:nth-child(3){
+    margin-left: 25px;
+}
+.vdo_main ul{
+    padding: 0;
+}
+.vdo_bg{
+    width: 100%;
+    cursor: pointer;
+}
+.vdo_play{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 65px;
+    cursor: pointer;
+}
+.vdo_tip{
+    font-size: 14px;
+    color: #1A1A1A;
+    letter-spacing: 0;
+    margin: 8px 0 4px;
+}
+.vdo_dtl{
+    font-size: 12px;
+    color: #808080;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+footer ul li{
+    list-style: none;
+    margin-left: 15px;
+    float: left;
+}
+footer ul li a {
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 0;
+}

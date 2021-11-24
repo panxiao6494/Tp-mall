@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-LINK官方网站</title>
+</head>
+<link rel="stylesheet" href="css/head.css">
+<link rel="stylesheet" href="css/login.css">
+
+<body>
+
+    <img src="img/bgph1.jpg" class="bgph">
+    <div class="loginbox">
+        <ul class="box_he">
+            <li class="log_btn">
+                <span>注册</span>
+            </li>
+            <li>
+                <span>登录</span>
+            </li>
+        </ul>
+        <div class="login_c">
+            <form>
+                <div class="loginbox_l">
+                    <ul class="mforn_r">
+                        <li>
+                            <label for="username">手机号/昵称:</label>
+                            <input type="text" class="num" value="">
+                        </li>
+                        <li>
+                            <label for="password">密 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 码:</label>
+                            <input type="password" class="pawd" value="P@ssw0rd">
+                            <img src="img/eyenone.png" class="eye" onclick="eye_ch()">
+                        </li>
+                    </ul>
+                    <p class="clear">
+                        <label for="cookietime" class="pawd_ch">
+                            <input type="checkbox" checked="checked">
+                            <span class="remb">&nbsp;下次自动登录</span>
+                        </label>
+                        <span class="forg"><a href="#">忘记密码？</a></span>
+                    </p>
+                    <p style="clear:both;padding-left:40px;padding-right: 15px;">登录即代表你同意美食天下《
+                        <a href="#" target="_blank">用户协议</a>》和 &nbsp;《
+                        <a href="#" target="_blank">隐私政策</a>》
+                    </p>
+                    <input type="button" class="login_btn" value="登&nbsp;录" onclick="toPage('cart.html')">
+                </div>
+                <div class="loginbox_r">
+                    <img src="img/qrc.png" width="110" style="margin:10px 0 0">
+                    <p style="padding-bottom:10px;">扫描二维码下载客户端</p>
+                    <a href="#" title="用QQ账号登录"><img src="img/nir1.png"></a>
+                    <a href="#" title="微信登录"><img src="img/nir2.png"></a>
+                    <a href="#" title="用新浪微博账号登录"><img src="img/nir3.png"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="head">
+        <nav class="main">
+            <a href="index.html" class="logo"></a>
+            <ul class="nav-list">
+                <li><a href="#">产品中心</a></li>
+                <li><a href="#">商用网络</a></li>
+                <li><a href="#">安防监控</a></li>
+                <li><a href="#">服务支持</a></li>
+                <li><a href="#">官方商城</a></li>
+                <li><a href="#">校园招聘</a></li>
+            </ul>
+            <form>
+                <input type="search" class="search">
+                <span onclick='change()' class="sear_btn"><img src="img/search.png"></span>
+                <span class="sign"><a href="login.html">登录</a> | <a href="sign.html">注册</a></span>
+            </form>
+        </nav>
+    </div>
+    <div class="footer" style="display: none;">
+        <div class="foot">
+            <div class="foot_nav">
+                <h4>
+                    <a href="#"></a>
+                </h4>
+                <ul>
+                </ul>
+            </div>
+            <div class="foot_nav">
+                <h4>
+                    <a href="#"></a>
+                </h4>
+                <ul>
+                </ul>
+            </div>
+            <div class="foot_nav">
+                <h4>
+                    <a href="#"></a>
+                </h4>
+                <ul>
+                </ul>
+            </div>
+            <div class="foot_nav">
+                <h4>
+                    <a href="#"></a>
+                </h4>
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div class="server">
+            <ul>
+                <li><a href="#">电话客服</a> </li>
+                <li><a href="#">在线客服</a></li>
+                <li><a href="#">投诉建议</a></li>
+                <li><a href="#">供应商自荐平台</a></li>
+            </ul>
+        </div>
+        <div class="pub">
+            <p>版权所有</p>
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

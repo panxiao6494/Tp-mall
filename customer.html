@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>对话窗口</title>
+    <link rel="stylesheet" href="css/customer.css">
+</head>
+
+<body bgcolor="#F0F0F0">
+    <div id="contain">
+        <div class="head">
+            <div class="hd_content">
+                <div class="hd_logo">
+                    <a href="index.html">
+                        <img src="img/logo.png">
+                    </a>
+                </div>
+                <div class="hd_rig">
+                    <div class="rig_nav">
+                        <ul>
+                            <li>
+                                <a>
+                                    <img src="img/wechat.png">
+                                    <p>微信客服</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="img/resolve.png">
+                                    <p>免费组网方案</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" style="cursor:auto">
+                                    <img src="img/store.png">
+                                    <p>官方商城</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="act_install.html">
+                                    <img src="img/service.png">
+                                    <p>服务支持</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maj">
+            <div class="chat">
+                <div class="chat_nav">
+
+                    <div class="chatItem" ref='chatItem'>
+                        <div class="time"> {{ date | format('yyyy-MM-dd') }} </div>
+                        <div class="chat_item">
+                            <div class="hd_pic">
+                                <img src="img/robot.png">
+                            </div>
+                            <div class="rob_word">
+                                <p>哈喽，我是温润又可爱，博学又多才的TP-LINK小博士，不信您考考我，么么哒~</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 
+                    <div class="chat_item">
+                        <div class="your_pic">
+                            <img src="img/you.png">
+                        </div>
+                        <div class="your_word">
+                            <p>哈喽，我是温润又可爱，博学又多才的TP-LINK小博士，不信您考考我，么么哒~</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="chat_top" ref='chat_top' @click='to_top'>︽</div>
+                <div class="chat_bot" ref='chat_bot' @click='to_bot'>︾</div>
+            </div>
+            <div class="input_word">
+                <textarea placeholder="请输入相关内容" v-model='msg'>{{msg}}</textarea>
+                <div class="input_btn">
+                    <input type="button" value="发送" class="sent" @click='sent'>
+                    <input type="button" value="结束服务" class="close">
+                </div>
+            </div>
+        </div>
+        <div class="qqShow">
+            <img src="img/qqShow.png">
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

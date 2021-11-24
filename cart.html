@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_top">
+            <ul class="nav_left">
+                <li>
+                    <span>Faller丶Sky</span>
+                    <div class="person">
+                        <div class="pers">
+                            <a href="\\">
+                                <img src="img/you.png">
+                            </a>
+                        </div>
+                        <div class="manage">
+                            <p class="count">
+                                <a href="login.html">退出</a>
+                                <span>|</span>
+                                <a href="\\">账号管理</a>
+                            </p>
+                            <p class="manage_num">TP值：3080</p>
+                            <p class="manage_num">铂金会员</p>
+                        </div>
+                        <div class="pers_foot">
+                            <a class="persFoot_btn" href="javascript:;">查看你的专属权益</a>
+                        </div>
+                    </div>
+                </li>
+                <li><span onclick="show(5)">手机逛TP-LINK</span></li>
+            </ul>
+            <ul class="nav_right">
+                <li><a href="index.html"><span>TP-LINK首页</span></a></li>
+                <li><a href="store.html"><span>TP-LINK商城</span></a></li>
+                <li>
+                    <span>我的TP-LINK</span>
+                    <div>
+                        <ul>
+                            <li><p>已买到的宝贝</p></li>
+                            <li><p>我的足迹</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span style="color:#FF5F00">★</span>
+                    <span>收藏夹</span>
+                    <div>
+                        <ul>
+                            <li>收藏的宝贝</li>
+                            <li>收藏的店铺</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>卖家详情</span>
+                    <div style="cursor: not-allowed;">
+                        <img src="img/load.gif">
+                    </div>
+                </li>
+                <li><a href="detail.html"><span>商品详情</span></a></li>
+                <li><a href="act_install.html"><span>设备安装</span></a></li>
+                <li><a href="customer.html"><span>在线客服</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="con_top">
+            <div class="top_left">
+                <img src="img/logo.png">
+                <span>购物车</span>
+            </div>
+            <div class="top_right">
+                <div class="search">
+                    <input type="text" class="search_in">
+                    <img src="img/search.png">
+                    <input type="button" class="search_btn" value="搜  索">
+                </div>
+            </div>
+        </div>
+        <div class="con_mid">
+            <div class="mid_head">
+                <ul>
+                    <li style="color: #FF4400;">全部商品<span>&nbsp;6</span></li>
+                    <li onmouseover="mv_line(1)" onmouseout="res()">降价商品<span>&nbsp;0</span></li>
+                    <li onmouseover="mv_line(2)" onmouseout="res()">库存紧张<span>&nbsp;0</span></li>
+                    <div class="topTotal">
+                        <input type="button" value="结 算" class="total_btn toSbtn">
+                        <span id="topTotal">0.00</span>
+                        <span>已选商品</span>
+                    </div>
+                </ul>
+                <div class="ft_line">
+                    <div class="floater" ></div>
+                </div>
+            </div>
+        </div>
+        <div class="check">
+            <div class="che_top">
+                <div class="cheLeft">
+                    <input type="checkbox" id="fstChk" >
+                    <span>全选</span>
+                    <span>商品信息</span>
+                </div>
+                <div class="cheRight">
+                    <ul>
+                        <li>单价</li>
+                        <li>数量</li>
+                        <li>金额</li>
+                        <li>操作</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="checkList">
+                <ul id="apdDom">
+                    <li><img src="img/load.gif" style="width: 90px;margin-left: 40%;"></li>
+                </ul>
+            </div>
+            <div class="total">
+                <div class="subtn">
+                    <span>结&nbsp;算</span>
+                </div>
+                <div class="total_rmb">
+                    <span>合计：</span>
+                    <span id="rmb">0.00</span>
+                </div>
+                <div class="goodsNum">
+                    <span>已选商品</span>
+                    <span id="chNum">0</span>
+                    <span>件</span>
+                </div>
+            </div>
+        </div>    
+    </div>
+        
+
+    <div class="tip_qrc">
+        <p>请扫码后用手机浏览<span class="close">×</span></p>
+        <img src="img/qrc.png">
+    </div>
+    <script src="js/cart.js"></script>
+</body>
+</html>

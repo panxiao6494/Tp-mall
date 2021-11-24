@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+
+</head>
+<link rel="stylesheet" href="css/detail.css">
+
+<body>
+    <div class="layout-header-nav">
+        <div class="container">
+            <p class="header-benefit">商城优惠大酬宾，全场满59元包邮！</p>
+            <div class="header-cart">
+                <input type="hidden" id="hdcartcount" value="0">
+            </div>
+
+            <div class="header-nav">
+                <a href="login.html">登录</a>
+                <span>|</span>
+                <a href="sign.html">注册</a>
+                <span>|</span>
+                <a href="cart.html">我的购物车</a>
+                <span>|</span>
+                <a href="act_install.html">帮助中心</a>
+                <span>|</span>
+                <a href="index.html">TP-LINK官网</a>
+            </div>
+        </div>
+    </div>
+    <div class="search_top">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo_1.png" alt=""></a>
+        </div>
+        <div class="search_input">
+            <input type="text" id="search_inp" placeholder="路由器">
+            <input type="submit" class="search_sub" value onclick="search()">
+        </div>
+    </div>
+    <div class="detail">
+        <div class="product_img">
+            <div class="picture">
+                <img src="img/produce1.png" class='big_img'>
+            </div>
+            <ul class='act_fa'>
+                <li onclick='change_pic(0)'>
+                    <img src="img/produce1.png" class="img_active">
+                </li>
+                <li onclick='change_pic(1)'>
+                    <img src="img/prds1_1.png">
+                </li>
+                <li onclick='change_pic(2)'>
+                    <img src="img/prds1_2.png">
+                </li>
+                <li onclick='change_pic(3)'>
+                    <img src="img/prds1_3.png">
+                </li>
+                <li onclick='change_pic(4)'>
+                    <img src="img/prds1_4.png">
+                </li>
+
+            </ul>
+        </div>
+        <div id="product-info">
+            <h4>TL-XTR5460易展Turbo版AX5400三频Wi-Fi6无线路由器（2.5G口）</h4>
+            <!-- <p class="productModel not-display">TL-WDR7620千兆版</p> -->
+            <div class="price">
+                <p class="red">¥939.90</p>
+                <p class="grey">原价：¥940.00</p>
+            </div>
+            <h5>TL-XTR5460，重新定义主流路由</h5>
+            <div class="ifstock">
+                <span class="startArr">发货地址：</span>广东 深圳
+                <span class="startArr1">有货</span>
+            </div>
+            <div class="buybtns">
+                <div class="pro-num">
+                    <input type="text" id="txtQty" v-model=pro_num @blur="new_num">
+                    <a href="javascript:void(0);" class="add" @click='add'>+</a>
+                    <a href="javascript:void(0);" class="reduce" @click='reduce'>-</a>
+                </div>
+                <div class="btn tobuy" data-id="835">立即购买</div>
+                <div class="btn addcart">加入购物车</div>
+            </div>
+            <div class="collect" @click='cole'>
+                <span class="cimg" ref='cimg'></span>
+                <span class="cp">加入收藏</span>
+            </div>
+        </div>
+        <div class="produces">
+            <h3>相关推荐</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/detail.js"></script>
+    </script>
+</body>
+
+</html>

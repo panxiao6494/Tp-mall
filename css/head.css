@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0 32px;
+    background-color: #222;
+
+}
+
+.logo {
+    float: left;
+    margin: 17px 0;
+    width: 125px;
+    height: 16px;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-list {
+    margin-left: 27%;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0 35px;
+    color: #fff;
+    line-height: 50px;
+
+}
+
+.nav-list li a {
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    /* line-height: 50px; */
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    color: #008CF8;
+}
+
+.main form {
+    /* position: relative; */
+    float: right;
+    margin: -38px 80px;
+    height: 20px;
+}
+
+.main form input {
+    border-radius: 15px;
+    padding-left: 10px;
+    height: 25px;
+    display: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.sear_btn {
+    margin-top: 2px;
+    position: absolute;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.sear_btn img {
+    width: 20px;
+    line-height: 20px;
+}
+
+.sign {
+    color: #fff;
+}
+
+.sign a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.media a img {
+    width: 250px;
+}
+
+.footer {
+    margin-left: 25%;
+    width: 60%;
+    /* background-color: #fff; */
+}
+
+.foot_nav {
+    margin-left: 100px;
+    float: left;
+    margin-top: 50px;
+
+}
+
+.foot_nav a {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+}
+
+.foot_nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot_nav ul li {
+    margin-top: 20px;
+    color: inherit;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.foot_nav ul li:hover {
+    color: #52BFFF;
+}
+
+.foot {
+    width: 100%;
+    height: 280px;
+}
+
+
+.server {
+    /* margin-left: 25%; */
+    /* background-color: pink; */
+    height: 50px;
+    line-height: 50px;
+    /* border-bottom: solid 1px; */
+}
+
+.server ul li {
+    float: left;
+    list-style: none;
+    margin-left: 50px;
+    font-size: 10px;
+}
+
+.server ul li a {
+    text-decoration: none;
+    color: #0090FF;
+}
+
+.pub {
+    width: 800px;
+    line-height: 50px;
+    height: 50px;
+    border-top: solid 1px;
+    margin-left: 90px;
+    display: block;
+    color: #1E1E1E;
+}

@@ -1,0 +1,100 @@
+.middle {
+    overflow: hidden;
+    width: 100%;
+}
+
+.photo {
+    padding: 0;
+    float: left;
+    width: 700%;
+    margin-left: 0;
+}
+
+.photo li {
+    list-style: none;
+    float: left;
+    width: 14.2857%;
+}
+
+.photo li img {
+    width: 100%;
+}
+
+.ctrl {
+    position: relative;
+    margin-left: 40%;
+    margin-top: -70px;
+    float: left;
+}
+
+.ctrl li {
+    width: 15px;
+    height: 15px;
+    border: solid 1px;
+    border-radius: 50%;
+    border-color: white;
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+    /* background-color: white; */
+    cursor: pointer;
+}
+
+.choice {
+    background-color: #fff;
+}
+
+.leg_top a img {
+    width: 100%;
+}
+
+.leg {
+    margin-top: 20px;
+    height: unset;
+}
+
+.leg_nav {
+    height: 3540px;
+    background-color: #EAEAEA;
+}
+
+.leg_nav ul {
+    margin-left: -45px;
+}
+
+.leg_nav ul li {
+    list-style: none;
+    width: 45%;
+    height: 580px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.add_nav {
+    display: block;
+}
+
+.add_nav li img {
+    width: 100%;
+    /* text-overflow: ellipsis; */
+    white-space: nowrap;
+}
+
+.add_nav li img:hover {
+    width: 130%;
+    transition: all 1s;
+}
+
+.add_nav div p {
+    font-size: 20px;
+}
+
+.add_nav div {
+    margin-top: -5px;
+    height: 150px;
+    background: #fff;
+    text-align: center;
+}
